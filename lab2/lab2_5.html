@@ -1,53 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <title>Форма</title>
+        <style>
+            table {
+                width: 400px;
+                border: 0px solid rgb(42, 16, 99);
+                margin: 15px;
+                float:left
+            }
+            td, th {
+                border: 0px solid rgb(42, 16, 99);
+                padding: 5px;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Форма регистрации пользователя</h1>
+        
+              <form action="#">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th><p style="text-align:left"> E-mail</p></th>
+                            <td><input type="email" id = "name" name="first_email"></td>
+                        </tr>
+                        <tr>
+                            <th><p style="text-align:left">Пароль</p></th>
+                            <td><input type="text" name="first_password"></td>
+                        </tr>
+                        <tr>
+                            <th><p style="text-align:left">Пол</p></th>
+                            <td><label>
+                                <input type="radio" name="status"> Мужчина
+                            </label>
+                            <label>
+                                <input type="radio" name="status"> Женщина
+                            </label></td>
+                        </tr>
+                        <tr>
+                            <th><p style="text-align:left">Дата рождения:</p></th>
+                                <td><label><input type="date"></label></td>
+                        </tr>
+                        <tr>
+                            <th><p style="text-align:left">Я знаю: </p></th>
+                            <td> 
+                                <input type="checkbox" name="Английский" id="Английский" value="yes">Английский<br>
+                                <input type="checkbox" name="Испанский" id="Испанский" value="yes">Испанский<br>
+                                <input type="checkbox" name="Китайский" id="Китайский" value="yes">Китайский<br>
+                                <input type="checkbox" name="Немецкий" id="fr" value="yes">Немецкий<br>
+                            </td>
+                                
+                        </tr>
+                        <tr>
+                            <th><p style="text-align:left"><label for="message">Обо мне</label></p></th><th> <textarea name="comment" placeholder="Напиши коротко о себе" id="message"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><button type = "submit">Готово</button>
+                                <button type="reset">Очистить</button>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </body>
 </html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>форма</title>
-</head>
-<body>
-    
-    <form>
-        <table>
-            <tbody>
-    <tr><th><label for="name">E-mail</label></th>
-        <th><input type="text" name="name" placeholder="ivanow07@mail.com" id="name" required></th>
- <tr><th><label for="name">Пароль</label></th>
-    <th><input type="text" name="name" placeholder="введите пароль" id="name" required></th></tr>
-    
-    <tr><th>Пол</form></th><th><input type="radio" name="radio" checked>
-    <label for="front">Мужчина</label>
-    <input type="radio" name="radio">
-    <label for="back"> Женщина</label></th></tr>
-
-  <tr><th> <label for="date">Дата рождения: </label> </th><th> <input type="date"></th></tr>
-      
-  <tr><th>Я знаю</th><th><input type="checkbox" checked>
-        <label for="courses">Русский</label>
-        <br> <input type="checkbox" checked>
-       <label for="courses">Английский</label>
-       <br> <input type="checkbox" checked>
-        <label for="courses">Немецкий</label>
-        <br> <input type="checkbox" checked>
-        <label for="courses">Испанский</label>
-        <br> <input type="checkbox" checked>
-        <label for="courses">Французкий</label></th></tr> 
-  <tr><th><label for="message">Обо мне</label></th><th> <textarea name="comment" placeholder="напишите коротко о себе" id="message"></textarea></th></tr>
-  <tr><th><button type="submit">Отправить</button> </th></tr>
- 
-
-  
-    </tbody> </table>  </form>
-    
-  </body>
-  </html>
