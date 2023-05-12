@@ -10,9 +10,15 @@
     <script> 
         "use strict";
         let num = prompt("Введите целое число");
-        
+        let n1 = num%100;
         let n = num%10;
-        switch (n) {
+        switch (n1) {
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            alert(`На ветке сидит ${num} ворон`);
+        { switch (n) {
             case 0:
             case 5:
             case 6:
@@ -28,17 +34,11 @@
            case 3:
            case 4:
            alert(`На ветке сидит ${num} вороны`);
-           break; 
-        }
-        let n1 = num%100;
-        switch (n1) {
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            alert(`На ветке сидит ${num} ворон`);
            break;
-        }  
+        }
+
+        }
+    break;}    
     </script>
 </body>
 </html>
