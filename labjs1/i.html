@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script> 
+        "use strict";
+        let num = prompt("Введите целое число");
+        let n = num%10;
+        let n1 = num%100;
+        if (n1>=11 && n1<=14){
+            switch (n1) {
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            alert(`На ветке сидит ${num} ворон`);
+           break;}
+        }  
+        else {
+            switch (n) {
+            case 0:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+           alert(`На ветке сидит ${num} ворон`);
+           break;
+           //case 1:
+           //alert(`На ветке сидит ${num} ворона`);
+           //break;
+           case 2:
+           case 3:
+           case 4:
+           alert(`На ветке сидит ${num} вороны`);
+           break; 
+        }
+        }
+    </script>
+</body>
+</html>
