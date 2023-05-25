@@ -6,7 +6,7 @@ function sumTo(n) {
 }
 function factorial(n) {
   if  (n==0n || n==1n){
-    factorial = 1n; 
+    let result = 1n; 
 } else {
   result= BigInt(n)*BigInt(factorial(n-1));
 }}
