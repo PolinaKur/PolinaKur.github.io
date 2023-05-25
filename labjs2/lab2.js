@@ -1,19 +1,12 @@
 function pow(x, n) {
-  let result = x;
-
-  for (let i = 1; i < n; i++) {
-    result *= n;
-  }
-
-  return result;
+  return x^n;
 }
-
-//let x = prompt("x?", '');
-//let n = prompt("n?", '');
-
-if (n%1!==0) {
+let result = x;
+let result = n;
+//if (n%1!==0) {
   alert(`Степень ${n} не поддерживается, используйте целое число`);
-} else {
-  alert( pow(x, n) );
-}
-    
+//} else {
+ // alert( pow(x, n) );
+//}
+let result = pow(x, n);
+alert( result );    
