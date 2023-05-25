@@ -10,3 +10,9 @@ function factorial(n) {
   result= BigInt(n)*BigInt(factorial(n-1))
   return result;
 }}
+function fib(n) {
+  if  (n<=1) return 1n;
+  else {
+  result= BigInt(fib(n-1))+BigInt(fib(n-2))
+  return result;
+}}
