@@ -12,5 +12,9 @@ function factorial(n) {
   }
 }
 function fib(n) {
-  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+  if (n <= 1) return 1n;
+  else {
+    result = BigInt(fib(n - 1)) * BigInt(fib(n - 2))
+    return result;
+  }
 }
