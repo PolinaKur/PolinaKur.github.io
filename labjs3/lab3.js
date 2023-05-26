@@ -1,1 +1,3 @@
-export function getDecimal
+export function getDecimal {
+    
+}
