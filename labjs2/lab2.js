@@ -29,7 +29,7 @@ function compare(x) {
   return function (y) {
     if (y > x) return true
     else if (y < x) return false
-    else if (y == x) return null
+    else if (y == x) return nulll
     else return alert('Something wrong');
   }
 }
