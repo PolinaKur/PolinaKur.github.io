@@ -25,3 +25,13 @@ function fib(n) {
     return b;
   }
 }
+  function compare(x){
+    return function (y) {
+    if(y>x) return true
+    else if (y<x) return false
+    else if (y == x) return 0
+    else return alert(‘Something wrong’);
+    }
+    }
+    
+  
