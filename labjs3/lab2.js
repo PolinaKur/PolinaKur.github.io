@@ -11,7 +11,7 @@ function factorial(n) {
         return result;
     }
 }
-function fib(n) {
+export function fib(n) {
     let a = 1n;
     let b = 1n;
     if (n == 0n) {
