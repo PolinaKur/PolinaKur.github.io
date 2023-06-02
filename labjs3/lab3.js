@@ -1,14 +1,9 @@
 export function getDecimal(num) {
-    return num - Math.floor(num);
-    }
-
-
-//export function getDecimal(num) {
-//    var str = "" + num; 
-//    var zeroPos = str.indexOf("."); 
+    var str = "" + num; // 1
+    var zeroPos = str.indexOf("."); // 2
    
- //   if (zeroPos == -1) return 0; 
- //   str = str.slice(zeroPos); 
+    if (zeroPos == -1) return 0; // 3
+    str = str.slice(zeroPos); // 4
    
- //   return +str; 
- //  }
+    return +str; // 5
+   }
