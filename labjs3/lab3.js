@@ -3,7 +3,10 @@ export function getDecimal(num) {
     else if (num < 0) return num - (-Math.ceil(-num));
     if (num > 1) return +(num - Math.trunc(num)).toFixed(2);
 }
-function ucFirst(str) {
+export function ucFirst(str) {
     if (!str) return str;
-    return str[0].toUpperCase() + str.slice(1);
+    else {
+        let NewStr = str[0].toUpperCase() + str.slice(1);
+        return NewStr;
     }
+}
