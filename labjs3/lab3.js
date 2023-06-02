@@ -1,9 +1,5 @@
 export function getDecimal(num) {
-    var str = "" + num; // 1
-    var zeroPos = str.indexOf("."); // 2
-   
-    if (zeroPos == -1) return 0; // 3
-    str = str.slice(zeroPos); // 4
-   
-    return +str; // 5
-   }
+    if (Math.trunc(num) == num) return 0;
+    else if (num < 0) return num - (-Math.ceil(-num));
+    if (num > 1) return +(num - Math.trunc(num)).toFixed(2);
+}
