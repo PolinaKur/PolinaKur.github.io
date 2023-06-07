@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>Document</title>
 </head>
+
 <body>
     <script>
-    "use strict";
-    let m = prompt("Введите число строк", '');
-    let n1 = 'dog dog dog cat cat dog';
-    let n2 = 'dog dog cat cat dog dog';
-    let n3 = 'dog cat cat dog dog dog';
-    let n4 = 'cat cat dog dog dog dog';
-    let n5 = 'cat dog dog dog dog cat';
-    var str = [n1, n2, n3, n4, n5];
-    for (let i = 0; i < m; i++) {
-        console.log(str[i%5]);
-    }
-</script>
+        "use strict";
+        let n = prompt("Введите целое число строк");
+        const one = "dog dog dog cat cat dog";
+        const two = "dog dog cat cat dog dog";
+        const three = "dog cat cat dog dog dog ";
+        const four = "cat cat dog dog dog dog";
+        const five = "cat dog dog dog dog cat ";
+        let str = [one, two, three, four, five];
+        for (let i = 0; i < n; i++) {
+            console.log(str[i % 5]);
+
+        }
+    </script>
 </body>
+
 </html>

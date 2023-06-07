@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>JS1.2</title>
 </head>
+
 <body>
-    <script> 
+    <script>
         "use strict";
-        let num = prompt("Введите целое число");
-        let n = num%10;
-        let n1 = num%100;
-        if (n1>=11 && n1<=14){
-            switch (n1) {
-            case 11:
-            case 12:
-            case 13:
-            case 14:
-            alert(`На ветке сидит ${num} ворон`);
-           break;
-           default:
-           alert('Это число не является целым. Попробуйте ввести другое число');
+        let num = prompt("Введите число: ");
+        if (num == 1) {
+            alert(`На ветке сидит ${num} ворона`);
         }
-        }  
+        else if (num % 100 != 11 & num % 100 != 12 & num % 100 != 13 & num % 100 != 14 & num % 10 > 10) {
+            alert(`На ветке сидит ${num} вороны`);
+        }
         else {
-            switch (n) {
-            case 0:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-           alert(`На ветке сидит ${num} ворон`);
-           break;
-           case 1:
-           alert(`На ветке сидит ${num} ворона`);
-           break;
-           case 2:
-           case 3:
-           case 4:
-           alert(`На ветке сидит ${num} вороны`);
-           break;
-           default:
-           alert('Это число не является целым. Попробуйте ввести другое число');
+            alert(`На ветке сидит ${num} ворон`);
         }
+
+        let nam = prompt("Введите число: ");
+        switch (num) {
+            case '1':
+                alert(`На ветке сидит ${nam} ворона`);
+                break;
+            case num % 100 == 11:
+                alert(`На ветке сидит ${nam} ворон`);
+                break;
+            case num % 100 == 12:
+                alert(`На ветке сидит ${nam} ворон`);
+                break;
+            case num % 100 == 13:
+                alert(`На ветке сидит ${nam} ворон`);
+                break;
+            case num % 100 == 14:
+                alert(`На ветке сидит ${nam} ворон`);
+                break;
+            case num % 10 == 0:
+                alert(`На ветке сидит ${nam} ворон`);
+                break;
+            default:
+                alert(`На ветке сидит ${nam} вороны`);
         }
     </script>
 </body>
+
 </html>

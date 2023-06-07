@@ -37,8 +37,8 @@ export function ucFirst(str) {
  * @return {boolean} true, если строка str содержит 'viagra' или 'XXX', а иначе false.
  */
 export function checkSpam(str) {
-    let NewStr = str.toLowerCase(); //перевод к нижнему регистру
-    return NewStr.includes('viagra') || NewStr.includes('xxx');
+    let newStr = str.toLowerCase(); //перевод к нижнему регистру
+    return newStr.includes('viagra') || newStr.includes('xxx');
 }
 
 
@@ -65,13 +65,13 @@ export function truncate(str, maxlength) {
  * @return {string} StrNew, преобразованная строка.
  */
 export function camelize(str) {
-    let STR = str.split("-");
-    let StrNew = "";
-    for (let i = 0; i <= STR.length - 1; i++) {
-        if (i == 0) StrNew = STR[0];
-        else StrNew += ucFirst(STR[i]);
+    let stroka = str.split("-");
+    let strNew = "";
+    for (let i = 0; i <= stroka.length - 1; i++) {
+        if (i == 0) strNew = stroka[0];
+        else strNew += ucFirst(stroka[i]);
     }
-    return StrNew;
+    return strNew;
 }
 
 /**
@@ -93,10 +93,11 @@ export function fibs(n) {
  * @param {Array} arr массив элементов.
  * @return {Array} arr, массив, отсортированный по убыванию.
  */
-export function arrReverseSorted(arr) {
-    return arr.sort(function (a, b) {
-        return b - a;
-    });
+export function arrReverseSorted(arr) { 
+    let arr_copy = arr.slice(); 
+    return arr_copy.sort(function (a, b) { 
+        return b - a; 
+    }) 
 }
 
 /**
